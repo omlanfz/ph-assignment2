@@ -152,13 +152,13 @@ hr {
 
 /* <= 576px */
 @media screen and (max-width: 576px) {
-  main {
+  /* main {
     max-width: 91.79%;
     margin: 0 auto;
-  }
+  } */
 
   .banner {
-    padding: 0;
+    padding: 0 4.1%;
     flex-direction: column-reverse;
     gap: 1.25rem;
     margin: 1.75rem 0 0;
@@ -252,9 +252,11 @@ hr {
 }
 
 .card-description {
-  color: #808080;
   font-weight: 500;
   font-size: 1.254rem;
+  color: rgb(128, 128, 128);
+  font-family: Raleway;
+  line-height: 2.358rem;
 }
 
 .card a {
@@ -277,12 +279,13 @@ hr {
   border-radius: 2.5rem;
   color: white;
   font-size: 1.67rem;
+  cursor: pointer;
 }
 
 /* <= 576px */
 @media screen and (max-width: 576px) {
   .curriculum {
-    padding: 0;
+    padding: 0 4.1%;
     margin: 2.5rem 0;
   }
 
@@ -295,10 +298,12 @@ hr {
     gap: 0.769rem;
     margin: 1.25rem 0 0;
   }
+
   .curriculum .card {
     padding: 2.25rem 1.75rem;
     gap: 1.375rem;
   }
+
   .card-title {
     font-size: 1.038rem;
   }
@@ -314,5 +319,133 @@ hr {
   .arrow-btn-container {
     display: none;
   }
+}
 
+/* Stories style */
+.stories {
+  background-image: url("../assets/bg.png"), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  ;
+  padding: 0 11.638rem 4.988rem;
+  display: flex;
+  flex-direction: column;
+  gap:  6.665rem;
+  align-items: center;
+}
+
+.stories .container {
+  display: flex;
+  gap: 1.62rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.stories .card-container {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.64rem;
+  place-items: center;
+}
+.stories .card-content {
+  padding: 0 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.99rem;
+}
+.stories .card {
+  padding: 0rem;
+  border-radius: 1rem;
+  display: block;
+  background-color: white;
+  text-align: left;
+}
+
+.stories .card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.stories .card-btn {
+  position: relative;
+  border-radius: 3.993rem;
+  padding: 1.25rem 1.583rem;
+  font-family: Raleway;
+  font-size: 1.278rem;
+  font-weight: 500;
+  color: white;
+  border: none;
+  transform: translate(3rem, -50%);
+  background-color: var(--bg-color);
+
+}
+.skyblue-card-btn {
+  --bg-color: rgb(60, 216, 232);
+}
+.olive-card-btn {
+  --bg-color: rgb(149, 178, 38);
+}
+.darkblue-card-btn {
+  --bg-color: rgb(93, 88, 240);
+}
+
+.stories .container>.card {
+  width: 100%;
+  max-width: 45.011rem;
+  /* height: 52.531rem; */
+  height: auto;
+  padding-bottom:3.5rem;
+}
+
+.stories .card-container>.card {
+  width: 100%;
+  max-width: 24.218rem;
+  height: 25.128rem;
+  /* height: auto; */
+  padding: 0 0 0.3rem;
+}
+
+.stories .card-container .card-title {
+  color: rgb(0, 0, 0);
+  font-size: 1.278rem;
+  font-weight: 700;
+  line-height: 2.397rem;
+}
+
+.stories .card-description {
+  font-size: 1.278rem;
+  color: rgb(102, 102, 102);
+}
+
+/* <= 576px */
+@media screen and (max-width: 576px) {
+  .stories {
+    padding: 0 4.1%;
+    gap: 1.25rem;
+  }
+  .container > .card {
+    display: none;
+  }
+  .stories .card-container {
+    gap: 0.707rem;
+  }
+  .stories .card-btn {
+    width: 130%;
+    transform: translate(-6rem, -110%);
+    scale: 50%;
+  }
+  .stories .card-container > .card {
+    width: 100%;
+    height: auto;
+  }
+  .stories .card-container .card-title {
+    font-size: 0.76rem;
+    line-height: 1rem;
+  }
+  .stories .card-content {
+    padding: 0rem 1rem 0rem;
+    transform: translateY(-90%);
+  }
+  
 }
