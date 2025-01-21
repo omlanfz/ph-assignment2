@@ -111,16 +111,18 @@ hr {
 }
 
 /* Banner style */
-main {
-  max-width: 80.55%;
+/* main {
   margin: 0 auto;
-}
+  max-width: 80.55%;
+} */
 
 .banner {
+  padding: 0 11.638rem;
   display: flex;
   gap: 4.167rem;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3.75rem;
 }
 
 .banner-content {
@@ -153,30 +155,163 @@ main {
     max-width: 91.79%;
     margin: 0 auto;
   }
+
   .banner {
+    padding: 0;
     flex-direction: column-reverse;
-    /* display: none; */
+    gap: 1.25rem;
+    margin: 1.75rem 0 0;
   }
+
   .banner img {
     width: 100%;
   }
+
   .banner-content {
     padding: 0 2rem;
     justify-content: center;
     align-items: center;
+    gap: 1.125rem;
   }
-  .banner-title, .description {
+
+  .banner-title,
+  .description {
     text-align: center;
   }
+
   .banner-title {
     font-size: 2rem;
   }
+
   .description {
     font-size: 0.875rem;
   }
+
   .primary-btn {
     border-radius: 0.5rem;
     padding: 0.675rem 1.5rem;
     font-size: 1rem;
   }
+}
+
+/* Curriculum style */
+.curriculum {
+  background-image: url("../assets/bg.png");
+  padding: 0 11.638rem 4.988rem;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 3.824rem;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 2.328rem;
+  margin: 6.65rem 0;
+}
+
+.card {
+  border-radius: 1.79rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.74rem;
+  padding: 4.41rem 3.38rem;
+  box-sizing: border-box;
+  border: 0.94px solid var(--border-color);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(180deg, var(--bg-start), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.blue-card {
+  --border-color: rgb(222, 245, 255);
+  --bg-start: rgb(222, 245, 255);
+}
+
+.yellow-card {
+  --border-color: rgb(255, 244, 220);
+  --bg-start: rgb(255, 244, 220);
+}
+
+.purple-card {
+  --border-color: rgb(242, 232, 255);
+  --bg-start: rgb(238, 225, 255);
+}
+
+.card img {
+  width: 40%;
+}
+
+.card-title {
+  font-size: 2.04rem;
+  font-weight: 700;
+}
+
+.card-description {
+  color: #808080;
+  font-weight: 500;
+  font-size: 1.254rem;
+}
+
+.card a {
+  font-weight: 700;
+  font-size: 1.254rem;
+  text-decoration: none;
+}
+
+.arrow-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.831rem;
+}
+
+.arrow-btn {
+  background-color: orange;
+  width: 4.988rem;
+  height: 4.988rem;
+  border: none;
+  border-radius: 2.5rem;
+  color: white;
+  font-size: 1.67rem;
+}
+
+/* <= 576px */
+@media screen and (max-width: 576px) {
+  .curriculum {
+    padding: 0;
+    margin: 2.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.625rem;
+  }
+
+  .curriculum .card-container {
+    flex-direction: column;
+    gap: 0.769rem;
+    margin: 1.25rem 0 0;
+  }
+  .curriculum .card {
+    padding: 2.25rem 1.75rem;
+    gap: 1.375rem;
+  }
+  .card-title {
+    font-size: 1.038rem;
+  }
+
+  .card-description {
+    font-size: 0.639rem;
+  }
+
+  .card a {
+    font-size: 0.639rem;
+  }
+
+  .arrow-btn-container {
+    display: none;
+  }
+
 }
