@@ -314,8 +314,10 @@ marquee {
     font-size: 1.038rem;
   }
 
-  .card-description {
-    font-size: 0.639rem;
+  .curriculum .card-description {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    padding: 0 4rem;
   }
 
   .card a {
@@ -447,8 +449,8 @@ marquee {
   .stories .card-btn {
     width: auto;
     white-space: nowrap;
-    transform: translate(-50%, -150%);
-    scale: 40%;
+    transform: translate(-20%, -100%);
+    scale: 60%;
     font-size: 1.1rem;
     padding: 1rem;
   }
@@ -553,10 +555,10 @@ footer {
 
   .footer-menu ul h3,
   .social h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   .footer-menu ul a {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
