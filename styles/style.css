@@ -111,6 +111,10 @@ hr {
   }
 
 }
+marquee {
+  background-color: orange;
+  color: white;
+}
 
 /* Banner style */
 /* main {
@@ -402,6 +406,7 @@ hr {
   /* height: 52.531rem; */
   height: auto;
   padding-bottom: 3.5rem;
+  text-overflow: ellipsis; 
 }
 
 .stories .card-container>.card {
